@@ -1,0 +1,17 @@
+{
+  "name": "@test-easy/babel-preset",
+  "description": "Automatically load the css for the @test-easy design system.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "hipstersmoothie/TestEasy",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "!*.test.*",
+    "!__snapshots__",
+    "!__tests__"
+  ],
+  "dependencies": {
+    "@design-systems/babel-plugin-include-styles": "0.74.12"
+  }
+}

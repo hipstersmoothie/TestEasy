@@ -1,0 +1,58 @@
+{
+  "name": "@test-easy/monorepo",
+  "private": true,
+  "repository": "hipstersmoothie/TestEasy",
+  "author": "Andrew Lisowski lisowski54@gmail.com",
+  "contributors": [
+    "Andrew Lisowski lisowski54@gmail.com"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "create": "ds create component",
+    "create:package": "ds create package",
+    "clean": "ds clean",
+    "dev": "ds dev",
+    "start": "lerna run start --parallel",
+    "storybook": "ds storybook start",
+    "playroom": "ds playroom start",
+    "lint": "ds lint",
+    "test": "ds test",
+    "build": "lerna run build --stream",
+    "build:storybook": "ds storybook build",
+    "build:playroom": "ds playroom build",
+    "size": "ds size"
+  },
+  "workspaces": [
+    "components/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "auto": "7.4.4",
+    "@design-systems/cli": "0.74.12",
+    "@testing-library/react": "8.0.4",
+    "@types/react-dom": "16.8.4",
+    "husky": "2.7.0",
+    "prettier": "1.18.2",
+    "lerna": "3.15.0",
+    "lint-staged": "^9.0.0",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,ts,tsx,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "jest-junit": {
+    "output": "./coverage/target/surefire-reports/junit.xml"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
