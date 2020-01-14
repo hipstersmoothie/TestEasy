@@ -7,6 +7,9 @@
     "Andrew Lisowski lisowski54@gmail.com"
   ],
   "license": "MIT",
+  "resolutions": {
+    "postcss-markdown": "https://github.com/gucong3000/postcss-markdown"
+  },
   "scripts": {
     "create": "ds create component",
     "create:package": "ds create package",
