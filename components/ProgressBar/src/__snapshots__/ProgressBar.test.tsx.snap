@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar It matches the snapshot 1`] = `
+<div>
+  <div
+    class="progressBar"
+  >
+    This is a ProgressBar component 
+  </div>
+</div>
+`;
