@@ -13,6 +13,8 @@ module.exports = function() {
     )
   );
 
+  console.log('Artifacts found: ', artifacts.map(a => a.url).join('\n'));
+
   const artifact = artifacts.find(artifact =>
     artifact.url.includes('index.html')
   );
