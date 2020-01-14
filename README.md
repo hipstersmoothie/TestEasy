@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>test-easy</h1>
+  <h1>test-easy!</h1>
 </div>
 
 > A design system for test-easy UI components, built on [@design-systems/cli](https://github.com/intuit/design-systems-cli).
